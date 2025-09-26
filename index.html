@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3X MOVIE</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+	<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjZTUwOTE0IiBkPSJNNDQ4IDgwSDY0QzI4LjcgODAgMCAxMDguNyAwIDE0NHYyMjRjMCAzNS4zIDI4LjcgNjQgNjQgNjRoMzg0YzM1LjMgMCA2NC0yOC43IDY0LTY0VjE0NGMwLTM1LjMtMjguNy02NC02NC02NHptLTY0IDI0MEwyNjQgMjU2LjdsLTY0IDI4LjVWNjQuN2MwLTMuNCAzLjgtNS44IDctNC40bDE1MiA2NGMzLjIgMS4zIDMuMiA3LjUgMCA4LjhMODI3IDI1NmwtMTUyIDY0Yy0zLjIgMS4zLTcgMS0tNy00LjRWMjI0bC02NCAyOC41VjMyMHoiLz48L3N2Zz4=" type="image/svg+xml" />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <span>3X MOVIE</span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for movies, actors, studios..." />
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="catalog-filter" id="catalog-filter">
+            <!-- Catalog buttons will be generated here -->
+        </div>
+        
+        <div class="list-container">
+            <div id="loading" class="loading">
+                <div class="loading-spinner"></div>
+            </div>
+            
+            <ul id="image-list">
+                <!-- Movie items will be added here by JavaScript -->
+            </ul>
+            
+            <div id="no-results" class="no-results hidden">
+                <i class="fas fa-search" style="font-size: 48px; margin-bottom: 15px;"></i>
+                <h3>No movies found</h3>
+                <p>Try different search terms or select another catalog</p>
+            </div>
+            
+            <div class="pagination" id="pagination">
+                <!-- Pagination buttons will be generated here -->
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 3X MOVIE. All rights reserved.</p>
+            <p>For entertainment purposes only.</p>
+        </div>
+    </footer>
+	<script src="script.js"></script>
+</body>
+</html>
